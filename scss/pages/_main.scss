@@ -1,0 +1,826 @@
+.main{
+  font-family: 'Montserrat', sans-serif;
+  .welcome{
+    background: linear-gradient(rgb(78, 52, 188,0.9), rgb(2, 142, 219,0.9)), url(https://www.monoboy.co.uk/wp-content/uploads/2014/10/LochNess.jpg) no-repeat center;
+    background-size: cover;
+    padding: 20rem 10% 9rem 10%;
+    margin-top: -36px;
+    @include for-phone-only{
+      padding: 12rem 0 1rem 0;
+      margin-top: -95px;
+    }
+    @include for-tablet-only{
+      padding: 7rem 0 1rem 0;
+      margin-top: -36px;
+    }
+    @include for-pro-only{
+      padding: 8rem 0 1rem 0;
+      margin-top: -36px;
+    }
+    .welcome-custom{
+      text-align: center;
+      color: $fontColor;
+      .welcome-title{
+        width: 100%;
+        line-height: 1;
+        font-size: 100px;
+        font-weight: bolder;
+        @include for-phone-only{
+          font-size: 26px;
+          margin-left: 5px;
+          font-weight: bolder;
+        }
+        @include for-tablet-only{
+          font-size: 55px;
+        }
+        @include for-pro-only{
+          font-size: 3.5rem;
+        }
+        color: $fontColor;
+      }
+
+      .welcome-headtext{
+        font-weight: bolder;
+        font-size: 16px;
+        @include for-phone-only{
+          font-size: 14px;
+          padding-left: 20px;
+          padding-right: 40px;
+        }
+        hr{
+          width: 5%;
+          background-color: $fontColor;
+          padding: .3px 0px .3px 0px;
+          @include for-phone-only{
+            width: 10%;
+          }
+        }
+      }
+
+      .welcome-text{
+        font-weight: 100;
+        font-size: 16px;
+        padding-left: 228px;
+        padding-right: 228px;
+        @include for-phone-only{
+          font-size: 14px;
+          padding-bottom: -8px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+        @include for-tablet-only{
+          font-size: 15px;
+          padding-bottom: -8px;
+          padding-left: 150px;
+          padding-right: 150px;
+        }
+        @include for-pro-only{
+          font-size: 15px;
+          padding-bottom: -8px;
+          padding-left: 150px;
+          padding-right: 150px;
+        }
+      }
+
+      .welcome-button{
+        align-items: center;
+        padding: .8rem .8rem .8rem .8rem;
+        width: 15%;
+        border-radius: 3rem;
+        margin-right: 10px;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        @include for-phone-only{
+          width: 50%;
+          margin-right: 0;
+          margin-top: 10px;
+        }
+        @include for-tablet-only{
+          width: 20%;
+        }
+        @include for-pro-only{
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  .button-backtop{
+    font-size: 24px;
+    background-color: rgb(2, 142, 219,0.9);
+    color: $fontColor;
+    border-radius: 63px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 39rem;
+    visibility: hidden;
+    transition-duration: .1s;
+    .text-icon{
+      font-size: 40px;
+      font-weight: 800;
+      text-align: center;
+      margin-left: 12px;
+      margin-top: 6px;
+    }
+  }
+  .button-backtop.visible{
+    font-size: 24px;
+    background-color: rgb(2, 142, 219,0.9);
+    color: $fontColor;
+    border-radius: 63px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 20px;
+    margin-top: 39rem;
+    visibility: visible;
+    z-index: 5;
+    .text-icon{
+      font-size: 25px;
+      font-weight: 800;
+      text-align: center;
+    }
+  }
+
+  .home{
+    padding: 6rem 10% 6rem 10%;
+    @include for-phone-only{
+      padding: 1rem 0 1rem 0;
+      img{
+        width: 100%;
+      }
+    }
+    @include for-tablet-only{
+      padding: 1rem 0 1rem 0;
+      img{
+        margin-top: 3rem;
+        width: 100%;
+      }
+    }
+    @include for-pro-only{
+      padding: 4rem 3% 1rem 2%;
+      img{
+        width: 95%;
+        margin-right: 1rem;
+      }
+    }
+    .home-info{
+      font-weight: 800;
+      font-style: normal;
+      font-size: 10px;
+      line-height: .9;
+      letter-spacing: 1px;
+      color: $markerText;
+      font-weight: bolder;
+      @include for-tablet-only{
+        margin-top: 2rem;
+      }
+    }
+
+    .home-title{
+      font-weight: 300;
+      font-size: 60px;
+      margin-left: -15px;
+      margin-top: -25px;
+      @include for-phone-only{
+        font-size: 35px;
+      }
+      @include for-tablet-only{
+        font-size: 40px;
+      }
+      @include for-pro-only{
+        font-size: 40px;
+        margin-bottom: -10px;
+      }
+      color: $fontColorTitle;
+    }
+
+    .home-text{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      @include for-phone-only{
+        font-size: 13px;
+      }
+      @include for-tablet-only{
+        font-size: 14px;
+      }
+      @include for-pro-only{
+        font-size: 14px;
+      }
+      text-align: justify;
+      color: $fontColorText;
+    }
+
+    .home-button{
+      border: none;
+      border-radius: 3rem;
+      margin-top: 1rem;
+      padding: 1rem 2rem 1rem 2rem;
+      background-color: $markerText;
+      font-size: 13px;
+      @include for-phone-only{
+        font-size: 12px;
+        padding: .5rem 1.5rem .5rem 1.5rem;
+      }
+      @include for-pro-only{
+        font-size: .8rem;
+        padding: .5rem 1.3rem .5rem 1.3rem;
+      }
+    }
+  }
+
+  .why{
+    background-color: $backgroundWhy;
+    text-align: center;
+    padding: 6rem 10% 5rem 10%;
+    @include for-phone-only{
+      padding: 1rem 0 1rem 0;
+    }
+    @include for-tablet-only{
+      padding: 1rem 0 2rem 0;
+    }
+    @include for-pro-only{
+      padding: 4rem 0 3rem 0;
+    }
+    .why-info{
+      font-weight: 700;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 1.1;
+      letter-spacing: 2px;
+      color: $markerText;
+      font-weight: bolder;
+      @include for-tablet-only{
+        margin-top: 2rem;
+      }
+      @include for-phone-only{
+        font-size: .7rem;
+      }
+      @include for-pro-only{
+        font-size: .75rem;
+        margin-bottom: -1rem;
+      }
+      color: $markerText;
+      font-weight: bolder;
+      padding-bottom: -2rem;
+    }
+
+    .why-title{
+      font-weight: 300;
+      font-size: 60px;
+      margin-top: -15px;
+      @include for-phone-only{
+        font-size: 35px;
+        margin-top: 0;
+      }
+      @include for-tablet-only{
+        font-size: 40px;
+        margin-top: 0;
+      }
+      @include for-pro-only{
+        font-size: 40px;
+        margin-top: 0;
+      }
+      color: $fontColorTitle;
+    }
+
+    .why-text-top{
+      font-family: 'Open Sans', sans-serif;
+      color: $fontColorText;
+      text-align: center;
+      padding-bottom: 2rem;
+      font-size: 15px;
+      font-weight: 300;
+      padding-left: 12%;
+      padding-right: 12%;
+      @include for-phone-only{
+        font-size: 13px;
+        padding: 0 50px 0 50px;
+      }
+      @include for-tablet-only{
+        font-size: 14px;
+        padding: 0 60px 0 60px;
+      }
+      @include for-pro-only{
+        font-size: 14px;
+        padding: 0 70px 16px 70px;
+      }
+    }
+
+    .why-subtitle{
+      padding-top: 1rem;
+      font-size: 1.1rem;
+      @include for-phone-only{
+        font-size: 16px;
+      }
+      @include for-tablet-only{
+        font-size: 15px;
+      }
+      @include for-pro-only{
+        font-size: 15px;
+      }
+    }
+
+    .why-text{
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      color: $fontColorText;
+      font-weight: 300;
+      font-size: 15px;
+      margin-top: -10px;
+      @include for-phone-only{
+        font-size: 13px;
+        margin-top: -15px;
+      }
+      @include for-tablet-only{
+        font-size: 14px;
+        margin-top: -15px;
+      }
+      @include for-pro-only{
+        font-size: 14px;
+        margin-top: -15px;
+      }
+    }
+  }
+
+  .phone{
+    background-image: $backgroundPainel;
+    padding: 2.3rem 10% 2.3rem 10%;
+    @include for-phone-only{
+      padding: 1rem 0 1rem 0;
+    }
+    @include for-tablet-only{
+      padding: 1.5rem 0 1.5rem 0;
+    }
+    @include for-pro-only{
+      padding: 1.5rem 0 1.5rem 0;
+    }
+    .phone-text{
+      font-size: 36px;
+      font-weight: 800;
+      @include for-phone-only{
+        font-size: 1rem;
+      }
+      @include for-tablet-only{
+        font-size: 1.2rem;
+      }
+      @include for-pro-only{
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      color: $fontColor;
+      .bottom{
+        padding-top: -1rem;
+        font-size: 36px;
+        line-height: 1.5;
+        @include for-phone-only{
+          font-size: 1rem;
+        }
+        @include for-tablet-only{
+          font-size: 1.2rem;
+        }
+        @include for-pro-only{
+          font-size: 20px;
+        }
+        font-weight: 100;
+        font-style: italic;
+        @include for-tablet-only{
+          padding-top: 0;
+        }
+      }
+    }
+
+    .phone-button{
+      padding-top: 1.8rem;
+      padding-left: 80px;
+      @include for-phone-only{
+        padding-top: 0;
+        font-size: 1.3rem;
+        right: 0;
+        padding-left: 8rem;
+      }
+      @include for-tablet-only{
+        padding-top: 1rem;
+        font-size: .3rem;
+      }
+      @include for-pro-only{
+        padding-top: .5rem;
+        padding-left: 8rem;
+      }
+      .button{
+        padding: 1rem 2.3rem 1rem 2.3rem;
+        background-color: $phoneButtonBG;
+        border: 2px solid $fontColor;
+        @include for-phone-only{
+          padding: .5rem 1rem .5rem 1rem;
+          right: 0;
+        }
+        @include for-tablet-only{
+          padding: .9rem 2rem .9rem 2rem;
+          margin-left: -80px;
+          right: 0;
+          font-size: 14px;
+        }
+        @include for-pro-only{
+          padding: .9rem 2rem .9rem 2rem;
+          margin-left: -70px;
+          right: 0;
+          font-size: 14px;
+        }
+        border-radius: 2rem;
+      }
+    }
+  }
+
+  .team{
+    padding: 3rem 10% 3rem 10%;
+    @include for-phone-only{
+      padding: 1rem 0 1rem 0;
+    }
+    @include for-tablet-only{
+      padding: 1rem 0 1rem 0;
+    }
+    @include for-pro-only{
+      padding: 3rem 0 3rem 0;
+    }
+    text-align: center;
+    .team-info{
+      font-weight: 700;
+      font-style: normal;
+      font-size: 12px;
+      line-height: 1.1;
+      letter-spacing: 2px;
+      color: $markerText;
+      font-weight: bolder;
+      @include for-phone-only{
+        font-size: .8rem;
+        font-weight: bolder;
+      }
+      @include for-tablet-only{
+        font-weight: bolder;
+        font-size: .7rem;
+        margin-top: 20px;
+      }
+      @include for-pro-only{
+        font-weight: bolder;
+        font-size: .8rem;
+      }
+      color: $markerText;
+      font-weight: bolder;
+      padding-bottom: -2rem;
+    }
+
+    .team-title{
+      color: $fontColorTitle;
+      font-weight: 300;
+      font-size: 60px;
+      margin-top: -20px;
+      margin-bottom: 50px;
+      @include for-phone-only{
+        font-size: 35px;;
+      }
+      @include for-tablet-only{
+        font-size: 40px;;
+        margin-top: -20px;
+      }
+      @include for-pro-only{
+        font-size: 40px;;
+        margin-top: -.8rem;
+      }
+    }
+    
+    .card{
+      border: none;
+      @include for-phone-only{
+        width: 100%;
+      }
+      @include for-tablet-only{
+        width: 115%;
+        margin-left: -20px;
+      }
+      @include for-pro-only{
+        width: 115%;
+        margin-left: -16px;
+      }
+    }
+
+    .card-name{
+      font-size: 1rem;
+      color: $markerText;
+      font-weight: bolder;
+    }
+
+    .card-cargo{
+      font-size: 1rem;
+      color: $fontColorTitle;
+      font-weight: inherit;
+      @include for-phone-only{
+        font-size: 13px;
+      }
+      @include for-pro-only{
+        font-size: 14px;
+      }
+    }
+
+    .card-info{
+      font-size: 15px;
+      color: $fontColorText;
+      width: 100%;
+      margin-top: 30px;
+      @include for-phone-only{
+        margin-top: 15px;
+        font-size: 12.5px;
+        text-align: center;
+      }
+      @include for-tablet-only{
+        margin-top: 15px;
+        font-size: 13px;
+        line-height: 1.5;
+
+        width: 110%;
+      }
+      @include for-pro-only{
+        margin-top: 25px;
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+
+    .rede{
+      width: 35px;
+      height: 35px;
+      color: #c0c0c0;
+      padding: 9px 9px 9px 9px;
+      margin-right: 10px;
+      @include for-tablet-only{
+        margin-right: -1px;
+      }
+      @include for-pro-only{
+        margin-right: 1px;
+      }
+      :hover{
+        color: $markerText;
+      }
+    }
+  }
+
+  .carousel-clients{
+    background-color: $backgroundCarousel;
+    padding: 6rem 5% 6rem 5%;
+    @include for-phone-only{
+      padding: 2rem 0 2rem 0;
+    }
+    @include for-tablet-only{
+      padding: 2rem 0 2rem 0;
+    }
+
+    .carousel-inner{
+      padding-left: 10%;
+      margin: 0;
+      @include for-phone-only{
+        padding-left: 25%;
+      }
+      @include for-tablet-only{
+        padding-left: 35%;
+      }
+    }
+
+    .carousel-indicators{
+      position: absolute;
+      margin-bottom: -5px;
+      .sliders{
+        width: 8px;
+        height: 8px;
+        border: 1px solid $fontColorText;
+        border-radius: 100px;
+      }
+    }
+
+    .sliders:hover{
+      background-color: $selectorNavCarousel;
+    }
+    .sliders:active{
+      background-color: $selectorNavCarousel;
+      color: $selectorNavCarousel;
+    }
+
+    .controler-carousel{
+      .icon-carousel{
+        background-color: $selectorNavCarousel;
+        border-radius: 100%;
+        padding: 15px 15px 15px 15px;
+      }
+      .icon-carousel:hover{
+        background-color: $selectorNavCarousel;
+      }
+      .icon-carousel :active{
+        background-color: $selectorNavCarousel;
+      }
+    }
+  }
+
+  // .clients{
+  //   background-color: $backgroundCarousel;
+  //   padding: 6rem 10% 6rem 10%;
+  //   @include for-phone-only{
+  //     padding: 2rem 0 2rem 0;
+  //   }
+  //   @include for-tablet-only{
+  //     padding: 2rem 0 2rem 0;
+  //   }
+  //   .list{
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     @include for-phone-only{
+  //       img{
+  //         display: none;
+          
+  //       }
+  //       img:first-child{
+  //         display: block;
+  //       }
+  //     }
+  //   }
+  //   .base{
+  //     position: relative;
+  //     .indicador{
+  //       width: .75rem;
+  //       height: .6rem;
+  //       border-radius: 50%;
+  //       background-color: $selectorNavCarousel;
+  //     }
+  //   }
+  // }
+
+  .projects{
+    padding: 3rem 10% 3rem 10%;
+    @include for-phone-only{
+      padding: 1rem 0 1rem 0;
+    }
+    @include for-tablet-only{
+      padding: 1rem 0 1rem 0;
+    }
+    @include for-pro-only{
+      padding: 5rem 1% 1rem 1%;
+    }
+    align-items: center;
+    .card-project{
+      .project-img{
+        padding: 1rem 1rem 1rem 1rem;
+        width: 33%;
+        @include for-phone-only{
+          width: 100%;
+        }
+        @include for-tablet-only{
+          width: 49%;
+        }
+        @include for-pro-only{
+          width: 33%;
+        }
+      }
+    }
+    .projects-button{
+      padding: 1rem 1.5rem 1rem 1.5rem;
+      border-radius: 3rem;
+      margin: 2rem 0 3rem 31rem;
+      background-color: $backgoundredesocial;
+      @include for-phone-only{
+        font-size: 12px;
+        padding: .5rem 1rem .5rem 1rem;
+        margin: 2rem 0 3rem 9rem;
+      }
+      @include for-tablet-only{
+        margin: 2rem 0 3rem 18rem;
+      }
+      @include for-pro-only{
+        margin: 2rem 0 3rem 26rem;
+        font-size: .9rem;
+        padding: .5rem 1rem .5rem 1rem;
+      }
+    }
+  }
+
+  .painel{
+    background-image: $backgroundPainel;
+    color: $fontColor;
+    padding: 4rem 10% 4rem 10%;
+    @include for-phone-only{
+      padding: 2rem 0 2rem 0;
+    }
+    @include for-tablet-only{
+      padding: 2rem 0 2rem 0;
+    }
+    @include for-pro-only{
+      padding: 2.5rem 0 2.5rem 0;
+    }
+    text-align: center;
+    font-weight: 300;
+    .painel-number{
+      font-size: 4.5rem;
+      @include for-phone-only{
+        font-size: 50px;
+      }
+      @include for-tablet-only{
+        font-size: 3rem;
+      }
+      @include for-pro-only{
+        font-size: 3rem;
+      }
+    }
+    .painel-text{
+      font-size: 1rem;
+      margin-top: -2rem;
+      @include for-phone-only{
+        font-size: 13px;
+        font-weight: bolder;
+      }
+    }
+  }
+
+  .contact{
+    padding: 3rem 10% 3rem 10%;
+    text-align: center;
+    @include for-phone-only{
+      padding: 2rem 0 0 0;
+    }
+    @include for-tablet-only{
+      padding: 2rem 0 2rem 0;
+    }
+    @include for-pro-only{
+      padding: 4rem 0 2rem 0;
+    }
+    .contact-title{
+      color: $fontColorTitle;
+      font-weight: 300;
+      font-size: 60px;
+      @include for-phone-only{
+        font-size: 35px;
+      }
+      @include for-tablet-only{
+        font-size: 40px;
+      }
+      @include for-pro-only{
+        font-size: 40px;
+      }
+    }
+
+    .contact-text{
+      font-size: 15px;
+      color: $fontColorTitle;
+      font-weight: 400;
+      @include for-phone-only{
+        font-size: 13px;
+        text-align: center;
+        font-weight: 300;
+      }
+      @include for-tablet-only{
+        font-size: 14px;
+      }
+      @include for-pro-only{
+        font-size: 14px;
+      }
+    }
+    .contact-form{
+      @include for-phone-only{
+        width: 100%;
+        padding: 0 0 0 0;
+      }
+      .form-component{
+        width: 50%;
+        margin-left: 25%;
+        @include for-phone-only{
+          width: 100%;
+          margin-left: 0;
+        }
+        padding: 1.5rem 1.5rem;
+        border-radius: 2rem;
+        border: none;
+        background-color: $inputContact;
+      }
+
+      .form-button{
+        font-size: .9rem;
+        padding: .9rem 3rem .9rem 3rem;
+        border-radius: 3rem;
+        background-color: $buttonSubmit;
+        @include for-phone-only{
+          font-size: 12px;
+          padding: .5rem 1.5rem .5rem 1.5rem;
+          margin: 2rem 0 3rem 0rem;
+        }
+        @include for-pro-only{
+          padding: .7rem 2rem .7rem 2rem;
+          font-size: .8rem;
+        }
+      }
+    }
+  }
+}

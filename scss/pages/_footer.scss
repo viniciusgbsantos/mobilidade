@@ -1,0 +1,176 @@
+.footer{
+  padding: 6rem 10% 4rem 10%;
+  font-weight: 400;
+  font-size: .8rem;
+  h5{
+    font-weight: bolder;
+    @include for-phone-only{
+      font-size: .9rem;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+    @include for-tablet-only{
+      font-size: .9rem;
+      font-weight: 800;
+    }
+    @include for-pro-only{
+      font-size: .9rem;
+      font-weight: 800;
+    }
+  }
+  img{
+    @include for-phone-only{
+      padding-left: 2.5rem;
+    }
+  }
+
+  @include for-phone-only{
+    padding: 1rem 0 1rem 0;
+    font-size: .75rem;
+  }
+  @include for-tablet-only{
+    padding: 3rem 0 2rem 0;
+    font-size: .8rem;
+  }
+  @include for-pro-only{
+    padding: 3rem 0 3rem 0;
+    font-size: .8rem;
+    font-weight: 400;
+  }
+  background-color: $backgroundFooter;
+  color: $fontColor;
+  font-size: 1rem;
+  .redesocial{
+    align-items: center;
+    @include for-phone-only{
+      padding-left: 6rem;
+    }
+    .rede{
+      width: 30px;
+      height: 30px;
+      @include for-phone-only{
+        width: 28px;
+        height: 28px;
+      }
+      @include for-tablet-only{
+        width: 26px;
+        height: 26px;
+      }
+      color: $fontColor;
+      background-color: $backgoundredesocial;
+      border-radius: 50px;
+      padding: 9px 9px 9px 9px;
+      @include for-tablet-only{
+        padding: 7px 7px 7px 7px;
+      }
+      margin-right: 10px;
+    }
+  }
+  .local{
+    width: 15px;
+    height: 15px;
+    color: $backgoundredesocial;
+    margin-right: 15px;
+    align-items: center;
+    top: 0;
+  }
+
+  .local-txt{
+    display: inline-block;
+    width: 80%;
+    font-size: .9rem;
+    margin-top: 10px;
+    @include for-phone-only{
+      padding: 1rem 0 1rem 0;
+      font-size: .75rem;
+      margin-top: -30px;
+      width: 90%;
+    }
+    @include for-tablet-only{
+      font-size: .7rem;
+    }
+    @include for-pro-only{
+      font-size: .7rem;
+    }
+  }
+  
+  .footer-txt{
+    padding-top: 1rem;
+    text-align: left;
+    width: 110%;
+    font-size: .9rem;
+    @include for-phone-only{
+      font-size: .75rem;
+      width: 100%;
+    }
+    @include for-tablet-only{
+      width: 150%;
+    }
+    @include for-pro-only{
+      width: 133%;
+    }
+  }
+
+  .email-input{
+    background-color: $backgroundFooter;
+    border-radius: 3rem;
+    font-weight: bolder;
+    @include for-phone-only{
+      margin-top: 2rem;
+      font-size: .75rem;
+    }
+    @include for-tablet-only{
+      margin-top: 2rem;
+    }
+  }
+
+  .footer-list{
+    padding-left: 2.5rem;
+    @include for-phone-only{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      margin-left: -4rem;
+    }
+    @include for-pro-only{
+      padding-left: 4rem;
+    }
+  }
+
+  .footer-button{
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    @include for-phone-only{
+      padding: .5rem 1rem .5rem 1rem;
+      font-size: .75rem;
+    }
+    @include for-tablet-only{
+      padding: .5rem 1rem .5rem 1rem;
+      font-size: 13px;
+      background-color: $markerText;
+    }
+    margin-top: 1rem;
+    border-radius: 3rem;
+  }
+}
+
+.bottombar{
+  padding: 0 10% 0 7%;
+  font-size: 1rem;
+  background-color: $backgroundBottomBar;
+  color: $fontColor;
+  @include for-phone-only{
+    padding: 1rem 0 1rem 2px;
+    font-size: .75rem;
+  }
+  @include for-tablet-only{
+    padding: 1% 1% 1% 1%;
+    font-size: .8rem;
+  }
+  @include for-pro-only{
+    padding: 0;
+    font-size: .8rem;
+    margin-left: -20px;
+  }
+  a{
+    color: #0082a9;
+  }
+}
