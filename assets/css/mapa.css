@@ -1,0 +1,64 @@
+body {
+    background-color: #6FA7D0;
+}
+
+.navbar-brand {
+    color: black;
+    font-weight: 300;
+    text-align: center;
+}
+
+.location {
+    background-color: #003053;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 450px;
+    width: 80%;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 20px;
+}
+
+.location-form {
+    width: 100%;
+}
+
+.input {
+    background-color: #0368B1;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+
+.input::placeholder{
+    color: white;
+}
+
+.elderly {
+    margin-left: 15px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.map img {
+    object-fit: contain;
+}
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+footer img {
+    width: 100%;
+    height: 50px;
+}
