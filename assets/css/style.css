@@ -265,7 +265,7 @@ h1, h2{
   font-family: "Montserrat", sans-serif;
 }
 .main .welcome {
-  background: linear-gradient(rgba(2, 142, 219, 0.6), rgba(2, 142, 219, 0.4)), url('/ProjetoCloneWeb/projetoClone/assets/img/bg-main.jpg') no-repeat center;
+  background: linear-gradient(rgba(2, 142, 219, 0.6), rgba(2, 142, 219, 0.4)), url('../img/bg-main.jpg') no-repeat center;
   background-size: cover;
   padding: 20rem 10% 9rem 10%;
   margin-top: -36px;
@@ -1480,4 +1480,3 @@ body * a:hover {
   color: #44b8f4;
 }
 
-/*# sourceMappingURL=style.css.map */
