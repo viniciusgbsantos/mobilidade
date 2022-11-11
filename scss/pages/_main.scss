@@ -190,6 +190,7 @@
       margin-top: -25px;
       @include for-phone-only{
         font-size: 35px;
+        matgin-top: 30px
       }
       @include for-tablet-only{
         font-size: 40px;
