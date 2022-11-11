@@ -446,7 +446,10 @@ h1, h2{
   .main .home img {
     width: 100%;
   }
-}
+  .quem-somos-title{
+    margin-top: 30px;
+    margin-left: 10px;
+  }
 @media (min-width: 768px) and (max-width: 1023px) {
   .main .home {
     padding: 1rem 0 1rem 0;
